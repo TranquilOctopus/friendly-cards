@@ -11,5 +11,6 @@
 |
 */
 
-Route::get('/', 'CardController@all');
-Route::get('/{card}', 'CardController@get');
+Route::get('/cards', 'CardController@all');
+Route::get('/cards/{card}', 'CardController@get');
+Route::get('/cards/rarity/{card}/{rarity}', 'CardController@setRarity');

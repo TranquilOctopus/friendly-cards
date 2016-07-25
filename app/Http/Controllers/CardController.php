@@ -9,13 +9,23 @@ use App\Http\Requests;
 
 class CardController extends Controller
 {
-    public function all() {
+    public function all()
+    {
         $cards = Card::all();
 
         return view('cards')->with('cards', $cards);
     }
 
-    public function get(Request $request, Card $card) {
+    public function get(Request $request, Card $card)
+    {
         return view('card')->with('card', $card);
+    }
+
+    public function setRarity(Request $request, Card $card, $rarity)
+    {
+        $card->rarity = (int) $rarity;
+        $card->save();
+
+        print "success";
     }
 }

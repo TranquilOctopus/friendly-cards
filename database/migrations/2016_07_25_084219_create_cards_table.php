@@ -21,6 +21,7 @@ class CreateCardsTable extends Migration
             $table->string('value');
             $table->integer('rarity')->default(0);
             $table->string('attack');
+            $table->string('set')->nullable();
             $table->string('text');
             $table->timestamps();
         });

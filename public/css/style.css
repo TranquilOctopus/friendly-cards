@@ -2,11 +2,12 @@
     margin-top: 50px;
 }
 .card {
-    width:286px;
-    height:520px;
+    width: 286px;
+    height: 520px;
     border: 1px solid black;
     border-radius: 10px;
-    padding: 15px
+    padding: 15px;
+    background-color: #ECECEC;
 }
 
 .wrap {
@@ -15,9 +16,15 @@
 }
 
 .name {
-    display:block;
-    width:100%;
-    height:65px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding-left: 15px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    box-shadow: 3px 3px 5px -2px rgba(0,0,0,0.75);
 
 }
 
@@ -40,18 +47,23 @@
     left: 192px;
     width:64px;
     height:64px;
+
 }
 .image {
     position:relative;
     width:256px;
     height:256px;
     display:block;
+    box-shadow: 3px 3px 5px -2px rgba(0,0,0,0.75);
+
 }
 
 .desc {
     margin-top: 15px;
     height:120px;
     overflow: hidden;
+    box-shadow: 3px 3px 5px -2px rgba(0,0,0,0.75);
+
 }
 
 .points {
@@ -107,4 +119,8 @@
     left:0;
     width:100%;
     height:100%;
+}
+
+.rarity {
+    width: 145px
 }

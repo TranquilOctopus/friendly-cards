@@ -76,6 +76,7 @@ class GenerateCards extends Command
             $card->character_id = $character->character_id;
             $card->corporation_id = $character->corporation_id;
             $card->alliance_id = $character->alliance_id;
+            $card->rarity = rand(0, 2);
 
             $attack = [];
             $value = 0;
