@@ -1,0 +1,9 @@
+$(document).ready(function(){
+    $('.rare').sparkle();
+    $(".rare")
+        .off("mouseover.sparkle")
+        .off("mouseout.sparkle")
+        .off("focus.sparkle")
+        .off("blur.sparkle")
+        .trigger("start.sparkle");
+});
